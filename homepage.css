@@ -133,7 +133,7 @@ body{
     margin-top: 120px;
     text-align: center;
     justify-content: center;
-    background-image: url(../img/slide2.png);
+    background-image: url(img/slide2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -179,7 +179,7 @@ body{
     height: 580px;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(rgba(52, 207, 235, 0.8),rgba(52, 207, 235, 0.8)),url(../img/coffee.png);
+    background-image: linear-gradient(rgba(52, 207, 235, 0.8),rgba(52, 207, 235, 0.8)),url(img/coffee.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 1px solid #2B2A2B;
