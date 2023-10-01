@@ -1,0 +1,441 @@
+/* Here is the code for the homepage.css file: */
+
+:root{
+    --banner-font-size: 0.9rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+/* Header-container and their parts css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: 'Martian Mono', monospace;
+}
+html{
+    font-size: 12px;
+}
+
+body{
+    background-color: #F6F5F3;
+    position: relative;
+    padding-bottom: 400px;
+}
+
+#header-container{
+    background-color: #2B2A2B;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#header-container .banner-wrapper .banner{ /*notice about width*/
+    width: 300%;
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+}
+
+#header-container .banner-wrapper .banner .banner-text{
+    width: 100%;
+    text-align: center;
+}
+
+#header-container .banner-wrapper .banner .banner-text p{
+    font-size: var(--banner-font-size);
+    font-weight: 600;
+    color: #DAD4BE;
+    text-transform: uppercase;
+    transform: translateY(100%);
+}
+
+#header-container .header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#header-container .header .logo{
+    margin-left: 50px;
+}
+
+#header-container .header .logo img{
+    width: auto;
+    height: 40px;
+    transform: translateY(23%);
+}
+
+#header-container .header .nav-menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transform: translateX(13%);
+}
+
+#header-container .header .nav-menu ul li{
+    margin: 0 20px;
+}
+
+#header-container .header .nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5;
+}
+
+#header-container .header .nav-menu ul li:hover a{
+    color: #DAD4BE;
+}
+
+#header-container .header .header-buttons{
+    margin-right: 50px;
+}
+
+#header-container .header .header-buttons .btn{
+    background-color: #2B2A2B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 17.5px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+#header-container .header .header-buttons .btn i{
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+#header-container .header .header-buttons .btn:hover i{
+    background-color: #413f41;
+}
+
+/* Body-container and their parts css */
+
+/* #body-container{
+} */
+
+#body-container{
+    background-color: #F6F5F3;
+}
+
+#body-container .slide{
+    width: 100%;
+    height: 675px;
+    margin-top: 120px;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../img/slide2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#body-container .slide .slide-text{
+    transform: translateY(50%);
+}
+
+#body-container .slide .slide-text h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: 'Dancing Script', cursive;                                         
+}
+
+#body-container .slide .slide-text h3{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#body-container .slide .slide-text h6{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 70px;
+    font-family: 'Martian Mono', monospace;
+}
+
+#body-container .slide .slide-text a.bdbtn{
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: none;
+}
+
+#body-container .new-product-review{
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(52, 207, 235, 0.8),rgba(52, 207, 235, 0.8)),url(../img/coffee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid #2B2A2B;
+}
+
+#body-container .new-product-review .product-review{
+    margin-top: 130px;
+    margin-left: 130px;
+}
+
+#body-container .new-product-review .product-review .product-name{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#body-container .new-product-review .product-review .product-infos{
+    width: 400px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+#body-container .new-product-review .product-review a{
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: none;
+}
+
+#body-container .new-product-review .product-img img{
+    width: 582px;
+    margin-top: 20px;
+    margin-right:30px ;
+}
+
+/* builder-part */
+#body-container .builder-container{
+    width: 100%;
+    border-top: 1px solid #2B2A2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#body-container .builder-container .builder-wrapper{
+    width: 1100px;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#body-container .builder-container .builder-wrapper .builder-img{
+    width: 500px;
+}
+
+#body-container .builder-container .builder-wrapper .builder-img a img{
+    width: 500px;
+    height: 580px;
+    border-radius: none;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+#body-container .builder-container .builder-wrapper .builder-img a img:hover{
+    border-radius: 50% 50% 0 0;
+    transform: scale(1.1);
+}
+
+#body-container .builder-container .builder-wrapper .builder-img h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2B2A2B;
+    font-family: 'Dancing Script', cursive;
+}
+
+#body-container .builder-container .builder-wrapper .builder-img .link-container{
+    border-bottom: 1px solid #2B2A2B;
+}
+
+#body-container .builder-container .builder-wrapper .builder-img .link-container a:last-child{
+    /* margin-bottom: 1px solid #2B2A2B; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #2B2A2B;
+}
+
+
+.featured-products-container{
+    border-top: 1px solid #2B2A2B;
+    padding-bottom: 100px;
+}
+
+.featured-products-container .tiltle{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.featured-products-container .tiltle h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #2B2A2B;
+    font-family: 'Dancing Script', cursive;
+}
+
+.featured-products-container .featured-products{
+    width: 100%;
+    display: flex;
+}
+
+.featured-products-container .featured-products .product-wrapper{
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+
+.featured-products-container .featured-products .product-wrapper .product .product-img{
+    width: 400px;
+}
+
+.featured-products-container .featured-products .product-wrapper .product .product-price{
+    font-size: 1.2rem;
+    color: #2B2A2B;
+    margin: 10px 0 20px 0;
+}
+
+.featured-products-container .featured-products .product-wrapper .product .buy-btn{
+    width: 100%;
+    background-color: #2B2A2B;
+    text-align: center;
+    padding: 5px 40px;
+}
+
+.featured-products-container .featured-products .product-wrapper .product .buy-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: none;
+}
+
+/* footer css */
+
+.footer-part-title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.footer-part-title h4{
+    font-size: 1.5;
+    font-weight: lighter;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: #E3DED7;
+    border-top: 1px solid #2B2A2B;
+    padding-bottom: 50px;
+}
+
+.footer-top{
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+footer .footer-logo{
+    width: 33.33%;
+    padding-left: 4.16%;
+}
+
+footer .footer-link-group{
+    display: flex;
+    width: 37.5%;
+}
+
+footer .footer-link-group .footer-link{
+    width: 33.33%;
+}
+
+footer .footer-link-group .footer-link ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+
+
+footer .footer-link-group .footer-link ul li a{
+    text-decoration: none;
+    color: #2B2A2B;
+    font-size: 1.2rem;
+}
+
+footer .footer-get-email{
+    width: 29.16%;
+    padding-right: 4.16%;
+}
+
+footer .footer-get-email .footer-email{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #2B2A2B;
+    padding-bottom: 5px;
+}
+
+footer .footer-get-email .footer-email input{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #E3DED7;
+}
+
+footer .footer-get-email .footer-email i{
+    font-size: 1.5rem;
+    color: #2B2A2B;
+    cursor: pointer;
+}
+
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+}
+
+.footer-bottom .copy-right{
+    width: 75%;
+    padding-left: 4.16%;
+}
+
+.footer-bottom .copy-right p{
+    font-size: 1rem;
+    color: #2B2A2B;
+}
+
+.footer-bottom .social-link{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-bottom .social-link a{
+    text-decoration: none;
+    color: #2B2A2B;
+    font-size: 1.9rem;
+    margin-right: 30px;
+}
