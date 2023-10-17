@@ -8,10 +8,8 @@
     <link rel="icon" type="image/x-icon" href="img/logo1.png">
     <link rel="stylesheet" href="homepage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <script src="search_btn.js"></script>
     <style></style>
 </head>
 
@@ -33,7 +31,7 @@
             </div>
         </div>
 
-        <script src="homepage.js"></script>
+        <script src="banner.js"></script>
 
         <div class="header">
             <div class="logo">
@@ -49,7 +47,7 @@
                 </ul>
             </div>
             <div class="header-buttons">
-                <button class="btn btn-search">
+                <button class="btn btn-search" onclick="search()">
                     <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
                 </button>
                 <a class="btn btn-primary">
@@ -62,109 +60,126 @@
         </div>
     </div>
 
-
-    <div id="body-container">
-        <div class="slide">
-            <div class="slide-text">
-                <h1>Tất cả các đơn hàng<br>Miễn phí ship</h1>
-                <h3>Từ 28/9 đến hết 28/10</h3>
-                <h6>Giảm giá 30% khi nhập code: TVHKTCOFFE</h6>
-                <div><a class="bdbtn" class="bdbtn" href="">Mua ngay</a></div>
-            </div>
-        </div>
-
-        <div class="new-product-review">
-            <div class="product-review">
-                <div class="product-name">
-                    <h1>Guatemala Bella Vista</h1>
+    <div class="search-page" style="display: none;">
+        <div class="search-container">
+            <div class="search-top">
+                <div class="search-title">
+                    <h1>What can we help you find ?</h1>
                 </div>
-                <div class="product-infos">
-                    <p>With a background in agronomy and four generations of family farming under his belt, Luis Pedro
-                        Zelaya brings experience and innovation to all aspects of his craft – resulting in exceptional
-                        coffees like Bella Vista.</p>
-                </div>
-                <div>
-                    <a class="bdbtn" href="">Get Bella Vista</a>
-                </div>
-            </div>
-            <div class="product-img">
-                <img src="img/product.png" alt="product" />
-            </div>
-        </div>
-    </div>
-
-    <div id="body-container">
-        <div class="builder-container">
-            <div class="builder-wrapper">
-                <div class="builder-img">
-                    <a href=""><img src="img/test.jpg" alt=""></a>
-                    <h3>Subscribe and Save. Fresh Stumptown delivered to your door</h3>
-                    <div class="link-container">
-                        <a href="">
-                            <p>Buying now</p>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="builder-img">
-                    <a href=""><img src="img/test.jpg" alt=""></a>
-                    <h3>Discover your match with our coffee quiz.</h3>
-                    <div class="link-container">
-                        <a href="">
-                            <p>Take a quizz</p>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
+                <div class="search">
+                    <input type="text" placeholder="What can we help you find" />
+                    <button class="search-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="body-container">
-        <div class="new-product-review" style="background-image: none;">
-            <div class="product-review" style="width: 50%;">
-                <div class="product-name" style="color: #2b2a2b;">
-                    <h1>Plant-based Magic: <br>Cold Brew with Oatly</h1>
+    <div class="main" style="display: block;">
+        <div id="body-container">
+            <div class="slide">
+                <div class="slide-text">
+                    <h1>Tất cả các đơn hàng<br>Miễn phí ship</h1>
+                    <h3>Từ 28/9 đến hết 28/10</h3>
+                    <h6>Giảm giá 30% khi nhập code: TVHKTCOFFE</h6>
+                    <div><a class="bdbtn" class="bdbtn" href="">Mua ngay</a></div>
                 </div>
-                <div class="product-infos" style="color: #2b2a2b;">
-                    <p>If you’re looking for a ready-to-drink cold brew experience, these balanced beauties pack the caffeine punch of cold brew and are completely vegan and gluten free.</p>
-                </div>
-                <div>
-                    <a class="bdbtn" href="" style="color: #fff; background-color: #2b2a2b;">Get Bella Vista</a>
-                </div>
-            </div>
-            <div class="product-img" style="width: 50%;">
-                <img src="img/product.png" alt="product" />
-            </div>
-        </div>
-    </div>
-
-    <div id="body-container">
-        <div class="featured-products-container">
-            <div class="tiltle">
-                <h1>Featured products</h1>
             </div>
     
-            <div class="featured-products">
-                <div class="product-wrapper">
-                    <div class="product">
-                        <div class="product-img"><img src="img/download.png" alt=""></div>
-                        <div class="product-price">$16.00</div>
-                        <div class="buy-btn"><a href="">Mua ngay</a></div>
+            <div class="new-product-review">
+                <div class="product-review">
+                    <div class="product-name">
+                        <h1>Guatemala Bella Vista</h1>
+                    </div>
+                    <div class="product-infos">
+                        <p>With a background in agronomy and four generations of family farming under his belt, Luis Pedro
+                            Zelaya brings experience and innovation to all aspects of his craft – resulting in exceptional
+                            coffees like Bella Vista.</p>
+                    </div>
+                    <div>
+                        <a class="bdbtn" href="">Get Bella Vista</a>
                     </div>
                 </div>
-                <div class="product-wrapper">
-                    <div class="product">
-                        <div class="product-img"><img src="img/download.png" alt=""></div>
-                        <div class="product-price">$16.00</div>
-                        <div class="buy-btn"><a href="">Mua ngay</a></div>
+                <div class="product-img">
+                    <img src="img/product.png" alt="product" />
+                </div>
+            </div>
+        </div>
+    
+        <div id="body-container">
+            <div class="builder-container">
+                <div class="builder-wrapper">
+                    <div class="builder-img">
+                        <a href=""><img src="img/test.jpg" alt=""></a>
+                        <h3>Subscribe and Save. Fresh Stumptown delivered to your door</h3>
+                        <div class="link-container">
+                            <a href="">
+                                <p>Buying now</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="builder-img">
+                        <a href=""><img src="img/test.jpg" alt=""></a>
+                        <h3>Discover your match with our coffee quiz.</h3>
+                        <div class="link-container">
+                            <a href="">
+                                <p>Take a quizz</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="product-wrapper">
-                    <div class="product">
-                        <div class="product-img"><img src="img/download.png" alt=""></div>
-                        <div class="product-price">$16.00</div>
-                        <div class="buy-btn"><a href="">Mua ngay</a></div>
+            </div>
+        </div>
+    
+        <div id="body-container">
+            <div class="new-product-review" style="background-image: none;">
+                <div class="product-review" style="width: 50%;">
+                    <div class="product-name" style="color: #2b2a2b;">
+                        <h1>Plant-based Magic: <br>Cold Brew with Oatly</h1>
+                    </div>
+                    <div class="product-infos" style="color: #2b2a2b;">
+                        <p>If you’re looking for a ready-to-drink cold brew experience, these balanced beauties pack the caffeine punch of cold brew and are completely vegan and gluten free.</p>
+                    </div>
+                    <div>
+                        <a class="bdbtn" href="" style="color: #fff; background-color: #2b2a2b;">Get Bella Vista</a>
+                    </div>
+                </div>
+                <div class="product-img" style="width: 50%;">
+                    <img src="img/product.png" alt="product" />
+                </div>
+            </div>
+        </div>
+    
+        <div id="body-container">
+            <div class="featured-products-container">
+                <div class="tiltle">
+                    <h1>Featured products</h1>
+                </div>
+        
+                <div class="featured-products">
+                    <div class="product-wrapper">
+                        <div class="product">
+                            <div class="product-img"><img src="img/download.png" alt=""></div>
+                            <div class="product-price">$16.00</div>
+                            <div class="buy-btn"><a href="">Mua ngay</a></div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product">
+                            <div class="product-img"><img src="img/download.png" alt=""></div>
+                            <div class="product-price">$16.00</div>
+                            <div class="buy-btn"><a href="">Mua ngay</a></div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product">
+                            <div class="product-img"><img src="img/download.png" alt=""></div>
+                            <div class="product-price">$16.00</div>
+                            <div class="buy-btn"><a href="">Mua ngay</a></div>
+                        </div>
                     </div>
                 </div>
             </div>

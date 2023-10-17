@@ -16,6 +16,10 @@ html{
     font-size: 12px;
 }
 
+.main{
+    animation: fadeIn 0.5s;
+}
+
 body{
     background-color: #F6F5F3;
     position: relative;
@@ -118,6 +122,70 @@ body{
     background-color: #413f41;
 }
 
+.search-page{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 120px;
+    background-color: #F6F5F3;
+    position: relative;
+    animation: fadeIn 1s;
+}
+
+.search-page .search-container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-page .search-container .search-top{
+    width: 40%;
+}
+
+.search-page .search-container .search-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.search-page .search-container .search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #2B2A2B;
+    padding-bottom: 5px;
+
+}
+
+.search-page .search-container .search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #F6F5F3;
+}
+
+.search-page .search-container .search .search-btn{
+    border: none;
+    background-color: #F6F5F3;
+}
+
+.search-page .search-container .search i{
+    font-size: 1.5rem;
+    color: #2B2A2B;
+    cursor: pointer;
+}
+
+.search-page .search-container .search input::placeholder{
+    padding-left: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 /* Body-container and their parts css */
 
 /* #body-container{

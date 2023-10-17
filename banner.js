@@ -1,7 +1,5 @@
 const slideshow = document.querySelector('.banner');
 const images = slideshow.querySelectorAll('.banner-text');
-console.log(slideshow);
-console.log(images);
 let i = 0;
 
 function MoveImgToBottom(a) {
