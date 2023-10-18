@@ -13,36 +13,34 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
-        <!-- jQuery library -->
         <script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
     
-        <!-- Latest compiled JavaScript -->
+        Latest compiled JavaScript -->
         <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-        <script src="banner.js"></script>
-</head>
-
-<body>
-    <div id="header-container">
-        <div class="banner-wrapper">
-            <div class="banner">
-                <div class="banner-text" id="banner-1">
-                    <p>Proud of best coffee in town</p>
-                </div>
-                <div class="banner-text" id="banner-2">
-                    <p>Free ship for all orders over $10</p>
-                </div>
-                <div class="banner-text" id="banner-3">
-                    <p>
+        <script src="../homepage/search_btn.js"></script>
+    </head>
+    
+    <body>
+        <div id="header-container">
+            <div class="banner-wrapper">
+                <div class="banner">
+                    <div class="banner-text" id="banner-1">
+                        <p>Proud of best coffee in town</p>
+                    </div>
+                    <div class="banner-text" id="banner-2">
+                        <p>Free ship for all orders over $10</p>
+                    </div>
+                    <div class="banner-text" id="banner-3">
+                        <p>
                         GET 30% OFF YOUR FIRST SUBSCRIPTION SHIPMENT WITH CODE: TVHKTSHOP
                     </p>
                 </div>
             </div>
         </div>
-
         
-        <script src="homepage.js"></script>
+        <script src="../homepage/banner.js"></script>
         <div class="header">
             <div class="logo">
                 <img src="img/logo1.png" alt="LOGO" />
@@ -57,7 +55,7 @@
                 </ul>
             </div>
             <div class="header-buttons">
-                <button class="btn btn-search">
+                <button class="btn btn-search" onclick="search()">
                     <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
                 </button>
                 <a class="btn btn-primary">
@@ -69,70 +67,85 @@
             </div>
         </div>
     </div>
-    <div id="kien" >
-        <div class="menu-class-cafe">
-                <button class="all">All</button>
-                <button class="cafe">Coffee</button>
-                <button class="ts">Mike Tea</button>
-                <button class="hoaqua">Juice</button>            
-        </div>
-        <div id="product">
-            <article class="cafe">
-                <img src="img/denda.png" alt="cà phê đen đá" >
-                <h2>Cà Phê Đen Đá</h2>
-                <h3>Giá : 25000đ</h3>
-            </article>
-            <article class="cafe">
-                <img  src="img/capuchino.png" alt="capuchino" >
-                <h2>Capuchino</h2>
-                <h4></h4>
-                <h3>Giá : 30000đ</h3>
-            </article>
-            <article class="cafe">
-                <img src="img/ca-phe-trung.png" alt="cà phê trứng" >
-                <h2>Cà Phê Trứng</h2>
-                <h3>Giá : 20000đ</h3>
-            </article>
-            <article class="cafe">
-                <img src="img/caphematche.png" alt="cà phê matcha">
-                <h2>Cà Phê Matcha</h2>
-                <h3>Giá : 30000đ</h3>
-            </article>
-            <article class="cafe">
-                <img src="img/bacxiu.png" alt="bạc xỉu" >
-                <h2>Bạc Xỉu</h2>
-                <h3>Giá : 25000đ</h3>
-            </article>
-            <article class="ts">
-                <img src="img/ts-duongden.png" alt="tran chau duong den" >
-                <h2>Trân Châu Đuờng Đen</h2>
-                <h3>Giá : 35000đ</h3>
-            </article>
-            <article class="ts">
-                <img src="img/ts-ss.png" alt="tran chau suong sao" >
-                <h2>Trân Châu Sương Sáo</h2>
-                <h3>Giá : 30000đ</h3>
-            </article>
-            <article class="hoaqua">
-                <img src="img/tra-chanh.png" alt="tra chanh" >
-                <h2>Trà Chanh</h2>
-                <h3>Giá : 20000đ</h3>
-            </article>
-            <article class="hoaqua">
-                <img src="img/nuoc-cam.png" alt="cam ep" >
-                <h2>Nước Cam Ép</h2>
-                <h3>Giá : 30000đ</h3>
-            </article>
-            <article class="hoaqua">
-                <img src="img/nuoc-dua.jpeg" alt="nuoc dua" >
-                <h2>Nước Dứa Ép</h2>
-                <h3>Giá : 20000đ</h3>
-            </article>
-            <article class="ts">
-                <img src="img/ts-matcha.jpeg" alt="tra sua matcha" >
-                <h2>Tra Sua Matcha</h2>
-                <h3>Giá : 30000đ</h3>
-            </article>
+
+    <div class="main">
+        <div id="kien" >
+            <div class="kien-wrapper">
+                <div class="menu-class-cafe">
+                    <button class="all">All</button>
+                    <button class="cafe">Coffee</button>
+                    <button class="ts">Mike Tea</button>
+                    <button class="hoaqua">Juice</button>            
+                </div>
+                <div id="product">
+                    <article class="cafe">
+                        <div class="product-img">
+                            <img src="img/denda.png" alt="cà phê đen đá" >
+                        </div>
+                        <h2>Cà Phê Đen Đá</h2>
+                        <h3>Giá : 25000đ</h3>
+                    </article>
+                    <article class="cafe">
+                        <div class="product-img">
+                            <img  src="img/capuchino.png" alt="capuchino" >
+                        </div>
+                        <h2>Capuchino</h2>
+                        <h4></h4>
+                        <h3>Giá : 30000đ</h3>
+                    </article>
+                    <article class="cafe">
+                        <img src="img/ca-phe-trung.png" alt="cà phê trứng" >
+                        <h2>Cà Phê Trứng</h2>
+                        <h3>Giá : 20000đ</h3>
+                    </article>
+                    <article class="cafe">
+                        <img src="img/caphematche.png" alt="cà phê matcha">
+                        <h2>Cà Phê Matcha</h2>
+                        <h3>Giá : 30000đ</h3>
+                    </article>
+                    <article class="cafe">
+                        <div class="product-img">
+                            <img src="img/bacxiu.png" alt="bạc xỉu" >
+                        </div>
+                        <h2>Bạc Xỉu</h2>
+                        <h3>Giá : 25000đ</h3>
+                    </article>
+                    <article class="ts">
+                        <div class="product-img">
+                            <img src="img/ts-duongden.png" alt="tran chau duong den" >
+                        </div>
+                        <h2>Trân Châu Đuờng Đen</h2>
+                        <h3>Giá : 35000đ</h3>
+                    </article>
+                    <article class="ts">
+                        <div class="product-img">
+                            <img src="img/ts-ss.png" alt="tran chau suong sao" >
+                        </div>
+                        <h2>Trân Châu Sương Sáo</h2>
+                        <h3>Giá : 30000đ</h3>
+                    </article>
+                    <article class="hoaqua">
+                        <img src="img/tra-chanh.png" alt="tra chanh" >
+                        <h2>Trà Chanh</h2>
+                        <h3>Giá : 20000đ</h3>
+                    </article>
+                    <article class="hoaqua">
+                        <img src="img/nuoc-cam.png" alt="cam ep" >
+                        <h2>Nước Cam Ép</h2>
+                        <h3>Giá : 30000đ</h3>
+                    </article>
+                    <article class="hoaqua">
+                        <img src="img/nuoc-dua.jpeg" alt="nuoc dua" >
+                        <h2>Nước Dứa Ép</h2>
+                        <h3>Giá : 20000đ</h3>
+                    </article>
+                    <article class="ts">
+                        <img src="img/ts-matcha.jpeg" alt="tra sua matcha" >
+                        <h2>Tra Sua Matcha</h2>
+                        <h3>Giá : 30000đ</h3>
+                    </article>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Code here -->

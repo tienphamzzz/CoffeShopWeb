@@ -27,5 +27,5 @@ function SlideShow() {
     }, 2000);
 }
 
-setInterval(SlideShow, 5000);
+setInterval(SlideShow, 3000);
 
