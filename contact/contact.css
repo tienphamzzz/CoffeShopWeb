@@ -287,7 +287,7 @@ footer .footer-get-email .footer-email i{
     font-size: 1.9rem;
     margin-right: 30px;
 }
-#main{
+.main{
     width: 80%;
     min-height: 100vh;
     margin: 20px auto;
