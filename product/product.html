@@ -1,46 +1,38 @@
-<!DOCclass html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TVHKT Coffe</title>
-    <link rel="icon" class="image/x-icon" href="img/logo1.png">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
     <link rel="stylesheet" href="product.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" href="event.js">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <script src="../homepage/search_btn.js"></script>
+    <style></style>
+</head>
 
-        <!-- <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-
-        <script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
-    
-        Latest compiled JavaScript -->
-        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-        <script src="../homepage/search_btn.js"></script>
-    </head>
-    
-    <body>
-        <div id="header-container">
-            <div class="banner-wrapper">
-                <div class="banner">
-                    <div class="banner-text" id="banner-1">
-                        <p>Proud of best coffee in town</p>
-                    </div>
-                    <div class="banner-text" id="banner-2">
-                        <p>Free ship for all orders over $10</p>
-                    </div>
-                    <div class="banner-text" id="banner-3">
-                        <p>
+<body>
+    <div id="header-container">
+        <div class="banner-wrapper">
+            <div class="banner">
+                <div class="banner-text" id="banner-1">
+                    <p>Proud of best coffee in town</p>
+                </div>
+                <div class="banner-text" id="banner-2">
+                    <p>Free ship for all orders over $10</p>
+                </div>
+                <div class="banner-text" id="banner-3">
+                    <p>
                         GET 30% OFF YOUR FIRST SUBSCRIPTION SHIPMENT WITH CODE: TVHKTSHOP
                     </p>
                 </div>
             </div>
         </div>
-        
+
         <script src="../homepage/banner.js"></script>
+
         <div class="header">
             <div class="logo">
                 <img src="img/logo1.png" alt="LOGO" />
@@ -68,7 +60,23 @@
         </div>
     </div>
 
-    <div class="main">
+    <div class="search-page" style="display: none;">
+        <div class="search-container">
+            <div class="search-top">
+                <div class="search-title">
+                    <h1>What can we help you find ?</h1>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="What can we help you find" />
+                    <button class="search-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" style="display: block;">
         <div id="kien" >
             <div class="kien-wrapper">
                 <div class="menu-class-cafe">
@@ -149,9 +157,6 @@
         </div>
     </div>
     <!-- Code here -->
-    <script>
-        
-    </script>
     <footer>
         <div class="footer-top">
             <div class="footer-logo">
@@ -219,62 +224,5 @@
     </footer>
 
 </body>
-<script>
-let count = {
-            cafe: document.querySelectorAll('.cafe').length,
-            ts: document.querySelectorAll('.ts').length,
-            coktail: document.querySelectorAll('.coktail').length,
-            hoaqua: document.querySelectorAll('.hoaqua').length,
-            all: document.querySelectorAll('article').length
-        };
-        
-        document.querySelectorAll('.menu-class-cafe button').forEach(button => {
-            
-            let className = button.getAttribute('class');
-            if(className =='all'){
-            let countText = `<sup>${count[className]}</sup>`;
-            button.innerHTML +=  countText;
-            }else {
-                let countText = `<sup>${count[className]-1}</sup>`;
-            button.innerHTML +=  countText;
-            }
-        });
-
-        var btnList = document.querySelectorAll('.menu-class-cafe button');
-var img1List = document.querySelectorAll('article img');
-var chon = document.querySelector('.menu-class-cafe');
-
-var arr = [];
-img1List.forEach(item => {
-    arr.push({
-        src: item.getAttribute('src'),
-        type: item.parentNode.getAttribute('class')
-    });
-});
-
-btnList.forEach(btn => {
-    btn.addEventListener('click', e => {
-        let type = e.currentTarget.getAttribute('class');
-        let filterData;
-        if (type === 'all') {
-            filterData = arr;
-        } else {
-            filterData = arr.filter(food => food.type === type);
-        }
-        render(filterData);
-    });
-});
-
-function render(list) {
-    document.querySelectorAll('article').forEach(article => {
-        article.style.display = 'none';
-    });
-    list.forEach(item => {
-        let articles = document.querySelectorAll(`.${item.type}`);
-        articles.forEach(article => {
-            article.style.display = 'inline-block';
-        });
-    });
-} 
-    </script>
+<script src="filter.js"> </script>
 </html>
