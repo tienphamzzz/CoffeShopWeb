@@ -1,0 +1,291 @@
+/* Here is the code for the homepage.css file: */
+
+:root{
+    --banner-font-size: 0.9rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+/* Header-container and their parts css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: 'Martian Mono', monospace;
+}
+html{
+    font-size: 12px;
+}
+
+body{
+    background-color: #F6F5F3;
+    position: relative;
+    padding-bottom: 400px;
+}
+
+#header-container{
+    background-color: #2B2A2B;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#header-container .banner-wrapper .banner{ /*notice about width*/
+    width: 300%;
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+}
+
+#header-container .banner-wrapper .banner .banner-text{
+    width: 100%;
+    text-align: center;
+}
+
+#header-container .banner-wrapper .banner .banner-text p{
+    font-size: var(--banner-font-size);
+    font-weight: 600;
+    color: #DAD4BE;
+    text-transform: uppercase;
+    transform: translateY(100%);
+}
+
+#header-container .header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#header-container .header .logo{
+    margin-left: 50px;
+}
+
+#header-container .header .logo img{
+    width: auto;
+    height: 40px;
+    transform: translateY(23%);
+}
+
+#header-container .header .nav-menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transform: translateX(13%);
+}
+
+#header-container .header .nav-menu ul li{
+    margin: 0 20px;
+}
+
+#header-container .header .nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5;
+}
+
+#header-container .header .nav-menu ul li:hover a{
+    color: #DAD4BE;
+}
+
+#header-container .header .header-buttons{
+    margin-right: 50px;
+}
+
+#header-container .header .header-buttons .btn{
+    background-color: #2B2A2B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 17.5px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+#header-container .header .header-buttons .btn i{
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+#header-container .header .header-buttons .btn:hover i{
+    background-color: #413f41;
+}
+
+/* Body-container and their parts css */
+
+/* #body-container{
+} */
+
+
+/* footer css */
+
+.footer-part-title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.footer-part-title h4{
+    font-size: 1.5;
+    font-weight: lighter;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: #E3DED7;
+    border-top: 1px solid #2B2A2B;
+    padding-bottom: 50px;
+}
+
+.footer-top{
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+footer .footer-logo{
+    width: 33.33%;
+    padding-left: 4.16%;
+}
+
+footer .footer-link-group{
+    display: flex;
+    width: 37.5%;
+}
+
+footer .footer-link-group .footer-link{
+    width: 33.33%;
+}
+
+footer .footer-link-group .footer-link ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+
+
+footer .footer-link-group .footer-link ul li a{
+    text-decoration: none;
+    color: #2B2A2B;
+    font-size: 1.2rem;
+}
+
+footer .footer-get-email{
+    width: 29.16%;
+    padding-right: 4.16%;
+}
+
+footer .footer-get-email .footer-email{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #2B2A2B;
+    padding-bottom: 5px;
+}
+
+footer .footer-get-email .footer-email input{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #E3DED7;
+}
+
+footer .footer-get-email .footer-email i{
+    font-size: 1.5rem;
+    color: #2B2A2B;
+    cursor: pointer;
+}
+
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+}
+
+.footer-bottom .copy-right{
+    width: 75%;
+    padding-left: 4.16%;
+}
+
+.footer-bottom .copy-right p{
+    font-size: 1rem;
+    color: #2B2A2B;
+}
+
+.footer-bottom .social-link{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-bottom .social-link a{
+    text-decoration: none;
+    color: #2B2A2B;
+    font-size: 1.9rem;
+    margin-right: 30px;
+}
+.menu-cafe{    
+    padding-left: 100px;
+    padding-top: 1px;   
+}
+.menu-cafe li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+.menu-cafe li:hover a{
+    border-bottom: 1px solid black;
+}
+.menu-cafe li {
+    display: inline-block;
+    padding-left: 25px;
+    
+}
+
+#kien{
+    margin-top: 140px;
+}
+#product{
+    margin-left: 126px;
+    margin-top: 25px;
+}
+#product article img{
+    padding-right: 40px;
+    width: 380px;
+    height: 350px;
+    padding-top: 15px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+#product article img:hover{
+    scale: calc(1.05);
+}
+#product article {
+    display: inline-block;
+}
+button {
+    margin-left: 35px;
+    background-color: #F6F5F3;
+    padding: 5px;
+    border: 0px;
+}
+button:hover{
+    background-color: rgb(194, 183, 183);
+}
+.menu-class-cafe {
+    padding-left: 94px;
+}
+.hide{
+    display: none;
+}
+
+
