@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TVHKT Coffe</title>
     <link rel="icon" type="image/x-icon" href="img/logo1.png">
-    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../search_btn.js"></script>
+    <script src="contact.js"></script>
     <style></style>
 </head>
 
@@ -40,10 +45,10 @@
             <div class="nav-menu">
                 <ul>
                     <li><a href="../index.html">Homepage</a></li>
-                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="../product/product.html">Shop</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Location</a></li>
-                    <li><a href="../contact/contact.html">Contact us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </div>
             <div class="header-buttons">
@@ -75,88 +80,95 @@
             </div>
         </div>
     </div>
+    <br>
+    <div id="main">
+        <div class="infor">
+            <div class="yeucau">
+                <div class="ykien" style="font-family: 'Cabin', sans-serif;">
+                    <img src="img/anhbtl.jpg" alt="anhbtl">
+                    <span>Chúng tôi muốn lắng nghe ý kiến của quý khách
+                        .Vui lòng gửi yêu cầu, thắc mắc theo thông tin
+                        bên dưới, chúng tôi sẽ liên lạc với bạn sớm nhất
+                        có thể để giải đáp mọi thắc mác và yêu cầu.
+                    </span><br>
+                </div>
+                <table>
+                    <form action="" name="frmAccount">
+                        <tr>
+                            <td><label for="hoten"><b>Họ và tên:</b></label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="nhap">
+                                    <div class="ndnhap">
+                                        <input type="text" placeholder="Nhập họ và tên" id="hoten" name="họ_và_tên">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="email"><b>Email</b></label><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="nhap">
+                                    <div class="ndnhap">
+                                        <input type="text" placeholder="Nhập email vd:abc@gmail.com" id="email"
+                                            name="email">
 
-    <div class="main" style="display: block;">
-        <div id="kien" >
-            <div class="kien-wrapper">
-                <div class="menu-class-cafe">
-                    <button class="all">All</button>
-                    <button class="cafe">Coffee</button>
-                    <button class="ts">Mike Tea</button>
-                    <button class="hoaqua">Juice</button>            
-                </div>
-                <div id="product">
-                    <article class="cafe">
-                        <div class="product-img">
-                            <img src="img/denda.png" alt="cà phê đen đá" >
-                        </div>
-                        <h2>Cà Phê Đen Đá</h2>
-                        <h3>Giá : 25000đ</h3>
-                    </article>
-                    <article class="cafe">
-                        <div class="product-img">
-                            <img  src="img/capuchino.png" alt="capuchino" >
-                        </div>
-                        <h2>Capuchino</h2>
-                        <h4></h4>
-                        <h3>Giá : 30000đ</h3>
-                    </article>
-                    <article class="cafe">
-                        <img src="img/ca-phe-trung.png" alt="cà phê trứng" >
-                        <h2>Cà Phê Trứng</h2>
-                        <h3>Giá : 20000đ</h3>
-                    </article>
-                    <article class="cafe">
-                        <img src="img/caphematche.png" alt="cà phê matcha">
-                        <h2>Cà Phê Matcha</h2>
-                        <h3>Giá : 30000đ</h3>
-                    </article>
-                    <article class="cafe">
-                        <div class="product-img">
-                            <img src="img/bacxiu.png" alt="bạc xỉu" >
-                        </div>
-                        <h2>Bạc Xỉu</h2>
-                        <h3>Giá : 25000đ</h3>
-                    </article>
-                    <article class="ts">
-                        <div class="product-img">
-                            <img src="img/ts-duongden.png" alt="tran chau duong den" >
-                        </div>
-                        <h2>Trân Châu Đuờng Đen</h2>
-                        <h3>Giá : 35000đ</h3>
-                    </article>
-                    <article class="ts">
-                        <div class="product-img">
-                            <img src="img/ts-ss.png" alt="tran chau suong sao" >
-                        </div>
-                        <h2>Trân Châu Sương Sáo</h2>
-                        <h3>Giá : 30000đ</h3>
-                    </article>
-                    <article class="hoaqua">
-                        <img src="img/tra-chanh.png" alt="tra chanh" >
-                        <h2>Trà Chanh</h2>
-                        <h3>Giá : 20000đ</h3>
-                    </article>
-                    <article class="hoaqua">
-                        <img src="img/nuoc-cam.png" alt="cam ep" >
-                        <h2>Nước Cam Ép</h2>
-                        <h3>Giá : 30000đ</h3>
-                    </article>
-                    <article class="hoaqua">
-                        <img src="img/nuoc-dua.jpeg" alt="nuoc dua" >
-                        <h2>Nước Dứa Ép</h2>
-                        <h3>Giá : 20000đ</h3>
-                    </article>
-                    <article class="ts">
-                        <img src="img/ts-matcha.jpeg" alt="tra sua matcha" >
-                        <h2>Tra Sua Matcha</h2>
-                        <h3>Giá : 30000đ</h3>
-                    </article>
-                </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="dienthoai"><b>Số điện thoại: </b></label><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="nhap">
+                                    <div class="ndnhap">
+                                        <input type="text" placeholder="Nhập số điện thoại vd:0123456789" id="dienthoai"
+                                            name="Số_điện_thoại">
+
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="noidung"><b>Nhập nội dung yêu cầu: </b></label><br></td>
+                        </tr>
+                        <td>
+                            <textarea name="nội_dung" id="" cols="61" rows="5" id="noidung"
+                                placeholder="Nhập nội dung"></textarea>
+                        </td>
+                        <tr>
+                            <td>
+                                <div class="guiyeucau">
+                                    <input type="button" value="Gửi yêu cầu "
+                                        onclick="validform(document.forms.frmAccount);">
+                                    <input type="reset" value="Nhập lại" id="nhaplai">
+                                </div>
+                            </td>
+
+                        </tr>
+
+                    </form>
+                </table>
+
             </div>
+            <div class="thongtin">
+                <b>
+                    Thông tin liên hệ:
+                </b>
+                <p>Địa chỉ: số 3 phố Cầu Giấy,
+                    Láng Thượng, Đống Đa, Hà Nội</p>
+                <p>Điện thoại: 0123456789</p>
+                <p>Email:vuatrochoi@gmail.com.vn</p>
+            </div>
+
         </div>
     </div>
-    <!-- Code here -->
+
     <footer>
         <div class="footer-top">
             <div class="footer-logo">
@@ -198,13 +210,13 @@
                     </ul>
                 </div>
             </div>
-    
+
             <div class="footer-get-email">
                 <div class="footer-part-title">
                     <h4>Get email from us</h4>
                 </div>
                 <div class="footer-email">
-                    <input class="text" placeholder="Enter your email">
+                    <input type="text" placeholder="Enter your email">
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
@@ -224,5 +236,5 @@
     </footer>
 
 </body>
-<script src="filter.js"> </script>
+
 </html>
