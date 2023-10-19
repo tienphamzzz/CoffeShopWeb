@@ -371,4 +371,8 @@ button:hover{
     display: none;
 }
 
+#kien .menu-class-cafe button.active{
+    background-color: black;
+    color: white;
+}
 
