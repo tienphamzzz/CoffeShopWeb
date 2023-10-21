@@ -1,0 +1,187 @@
+/* *{
+    margin: 0;
+    padding: 0;
+
+} */
+.all {
+  width: 100%;
+  /* display: flex; */
+  justify-content: center;
+  background-color: #eceae6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.anhnen {
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-image: url(nen6.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 80%;
+  padding-top: 80%;
+  /* height: 80%; */
+  /* z-index: 0; */
+  padding: 20px;
+  margin: auto;
+}
+
+.anhnen p {
+  text-align: center;
+  padding: 20px;
+}
+
+hr {
+  width: 100%;
+  border: 0, 8px solid #000;
+}
+
+.lienket {
+  /* width: 40%; */
+  margin: auto;
+  /* transform: translate(-50%,-50%); */
+  /* display: flex;
+    justify-content: center; */
+  text-align: center;
+}
+
+.lienket ul {
+  list-style: none;
+}
+
+.lienket li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.lienket p {
+  text-align: center;
+  margin: 5px;
+}
+
+.lienket a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+}
+
+.tieude {
+  width: 60%;
+  margin: auto;
+
+}
+
+.tieude1 {
+
+
+  display: flex;
+  width: 80%;
+  margin: auto;
+
+}
+
+.so1 {
+  padding-right: 30px;
+}
+
+.list-img {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+  width: 800px;
+
+}
+
+.img {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.dsanh {
+  width: 100%;
+
+  /* overflow: hidden;  */
+}
+
+.anh {
+  /* display: flex; */
+  /* transition: transform 0.5s ease; */
+  background-image: 200px 400px;
+  padding-right: 20px;
+  width: 60%;
+  margin: auto;
+
+}
+
+/* .muiten{
+  position: absolute;
+  
+  transform: translateY(-50%);
+ }
+ .left{
+  left: 0;
+ }
+ .right{
+  right: 0;
+ } */
+
+@media only screen and (max-width:46.1875em) {
+
+  .tieude1 {
+    flex-direction: column-reverse;
+  }
+
+  .list-img {
+    width: 100% !important;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .img {
+    display: flex;
+    /* transition: transform 0.5s ease; */
+    width: 100% !important;
+  }
+
+  .dsanh {
+    width: 100% !important;
+  }
+
+  .anh {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width:46.25em)and(max-width:63.9375em) {
+  .tieude1 {
+    flex-direction: column-reverse;
+  }
+
+  .list-img {
+    width: 100% !important;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .img {
+    display: flex;
+    /* transition: transform 0.5s ease; */
+    width: 100% !important;
+  }
+
+  .dsanh {
+    width: 100% !important;
+  }
+
+  .anh {
+    width: 100% !important;
+  }
+}

@@ -18,8 +18,12 @@ function StringMatch(txt,reg){
     return reg.test(txt.value);
 }
 function validform(f){
+    if(checknull(f.ho_và_tên || f.email || f.Số_điện_thoại || f.nội_dung)){
+        alert("Vui lòng nhập đầy đủ thông tin")
+        return;
+    }
     if(checknull(f.họ_và_tên)){
-        alert(f.họ_và_tên.name+" chưa được nhâp")
+        alert("Vui lòng nhập họ và tên.")
         f.họ_và_tên.focus();
         return;
     }

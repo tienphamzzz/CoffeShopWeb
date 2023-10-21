@@ -4,13 +4,15 @@
     --banner-font-size: 0.9rem;
 }
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Inter&family=Martian+Mono&family=Open+Sans&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins&family=Roboto&display=swap');
 /* Header-container and their parts css */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 1.6;
-    font-family: 'Martian Mono', monospace;
+    font-family: 'Playpen Sans', cursive;
 }
 html{
     font-size: 12px;
