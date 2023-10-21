@@ -132,8 +132,8 @@
 }
 
 #body-container .builder-container .builder-wrapper .builder-img a img{
-    width: 500px;
-    height: 580px;
+    width: 480px;
+    height: 560px;
     border-radius: none;
     transition: 0.3s;
     object-fit: cover;

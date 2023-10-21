@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TVHKT Coffe</title>
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
+    <link rel="stylesheet" href="../general.css" />
+	<link rel="stylesheet" href="location.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+	href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap"
+	rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="slide.js"></script>
+	<script src="../search_btn.js"></script>
+
+    <style></style>
+</head>
+
+<body>
+    <div id="header-container">
+        <div class="banner-wrapper">
+            <div class="banner">
+                <div class="banner-text" id="banner-1">
+                    <p>Proud of best coffee in town</p>
+                </div>
+                <div class="banner-text" id="banner-2">
+                    <p>Free ship for all orders over $10</p>
+                </div>
+                <div class="banner-text" id="banner-3">
+                    <p>
+                        GET 30% OFF YOUR FIRST SUBSCRIPTION SHIPMENT WITH CODE: TVHKTSHOP
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="../banner.js"></script>
+
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo1.png" alt="LOGO" />
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="../product/product.html">Shop</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="../contact/contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-buttons">
+                <button class="btn btn-search" onclick="search()">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+                </button>
+                <a class="btn btn-primary">
+                    <i class="fa-regular fa-user" style="color: #ffffff"></i>
+                </a>
+                <button class="btn btn-secondary">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-page" style="display: none;">
+        <div class="search-container">
+            <div class="search-top">
+                <div class="search-title">
+                    <h1>What can we help you find ?</h1>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="What can we help you find" />
+                    <button class="search-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class = "body-container">
+		<section>
+			<div class="grid">
+				<div class="content-main">
+					<div class="content">
+						<h1 class="content-heading" >Tìm quán Cafe gần bạn</h1>
+						<p class="content-heading_sub">Không nằm gần một trong những quán cà phê của chúng tôi? Tìm kiếm các sản phẩm Cà phê và Cold Brew được bán tại các đối tác bán lẻ trên toàn quốc hoặc đặt hàng trực tuyến để có loại cà phê tươi ngon nhất được giao đến tận nhà bạn.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="wrapper">
+		<div class = "wrapper-header">
+				<h2 class="location-slider__header"> 
+					Quán cà phê ở Hà Nội
+					<span class="js-location-city location-slider__select-wrapper" style="width: 30%;">
+						<select id="locationSliderSelect" class="location-slider__select">
+							<option value="kyoto">Kyoto</option>
+							<option value="los angeles">Los Angeles</option>
+							<option value="new york">New York</option>
+							<option value="brooklyn">Brooklyn</option>
+							<option selected="true" value="portland">Portland</option>
+						</select>
+					</span>
+				</h2>
+				<div class="btn-wrap">
+					<button class="prev-btn"><i class="fa-solid fa-arrow-left fa-2xl"></i></button>
+					<button class="next-btn"><i class="fa-solid fa-arrow-right fa-2xl"></i></button>
+				</div>
+			</div>
+		  <div class="carousel">
+			<div class="location-item__wrapper" style="background-color: white">
+				<a href="#"><img src="img/370304059_1100460357998701_6275909498225209960_n (1).png"></a>
+				<div class="location-item__details">
+					  <h3 class="location-item__title">
+						<a href="#">Việt Nga Coffee</a>
+					  </h3>
+					  <span class="location-item__address">1194 Đ.Láng , Láng Thượng<br>Đống Đa, Hà Nội<br></span>
+					  <span class="location-item__hours">Các ngày trong tuần 6h30 - 21h <br>Cuối tuần 6h30 - 22h </span>
+					  <div class="location-item__actions">
+						<a href="#" class="location-item__link" target="_blank">
+							Đặt hàng trước
+						</a>
+						<a href="/pages/locations-portland-ace-hotel" class="location-item__link">
+						  Thêm thông tin
+						</a>
+					  </div>
+				</div>
+			</div>
+			<div class="location-item__wrapper" style="background-color: white">
+				<a href="#"><img src="img/387531031_3607438976191754_6587688979369636433_n.png"></a>
+				<div class="location-item__details">
+					  <h3 class="location-item__title">
+						<a href="#">La Jolie Cafe</a>
+					  </h3>
+					  <span class="location-item__address">28 Ngõ 62 Nguyễn Chí Thanh , Láng Thượng<br>Đống Đa , Hà Nội<br></span>
+					  <span class="location-item__hours">Các ngày trong tuần 6h30 - 23h<br>Cuối tuần 6h30 - 23h30h</span>
+					  <div class="location-item__actions">
+						<a href="#" class="location-item__link" target="_blank">
+							Đặt hàng trước
+						</a>
+						<a href="/pages/locations-portland-ace-hotel" class="location-item__link">
+							Thêm thông tin
+						</a>
+					  </div>
+				</div>
+			</div>
+			<div class="location-item__wrapper" style="background-color: white">
+				<a href="#"><img src="img/393283824_878728000438403_9204990157206835806_n.png"></a>
+				<div class="location-item__details">
+					  <h3 class="location-item__title">
+						<a href="#">LAIKA Cafe</a>
+					  </h3>
+					  <span class="location-item__address">91 P.Trung Hòa , Trung Hòa<br>Cầu Giấy , Hà Nội <br></span>
+					  <span class="location-item__hours">Các ngày trong tuần 7h - 00h<br>Cuối tuần 6h30 - 00h</span>
+					  <div class="location-item__actions">
+						<a href="#" class="location-item__link" target="_blank">
+							Đặt hàng trước
+						</a>
+						<a href="/pages/locations-portland-ace-hotel" class="location-item__link">
+							Thêm thông tin
+						</a>
+					  </div>
+				</div>
+			</div>
+			<div class="location-item__wrapper" style="background-color: white">
+				<a href="#"><img src="img/393766707_335139595731025_3811139857927346077_n.png"></a>
+				<div class="location-item__details">
+					  <h3 class="location-item__title">
+						<a href="#">Tiny Post Cafe</a>
+					  </h3>
+					  <span class="location-item__address">251 Đ.Nguyễn Khang , Yên Hòa <br>Cầu Giấy , Hà Nội<br></span>
+					  <span class="location-item__hours">Các ngày trong tuần 8h - 22h30<br>Cuối tuần 7h30 - 23h</span>
+					  <div class="location-item__actions">
+						<a href="#" class="location-item__link" target="_blank">
+							Đặt hàng trước
+						</a>
+						<a href="/pages/locations-portland-ace-hotel" class="location-item__link">
+							Thêm thông tin
+						</a>
+					  </div>
+				</div>
+			</div>
+			<div class="location-item__wrapper" style="background-color: white">
+				<a href="#"><img src="img/394044757_347613207654882_334772954559452956_n.png"></a>
+				<div class="location-item__details">
+					  <h3 class="location-item__title">
+						<a href="#">Cafe Mít</a>
+					  </h3>
+					  <span class="location-item__address">11 Ng.850 Đ.Láng , Láng Thượng<br>Đống Đa , Hà Nội<br></span>
+					  <span class="location-item__hours">Các ngày trong tuần 6h - 23h<br>Cuối tuần 6h - 00h</span>
+					  <div class="location-item__actions">
+						<a href="#" class="location-item__link" target="_blank">
+							Đặt hàng trước
+						</a>
+						<a href="/pages/locations-portland-ace-hotel" class="location-item__link">
+							Thêm thông tin
+						</a>
+					  </div>
+				</div>
+			</div>
+			<div class="location-item__wrapper" style="background-color: white">
+				<a href="#"><img src="img/394118503_2675543789273943_3382718228259197490_n.png"></a>
+				<div class="location-item__details">
+					  <h3 class="location-item__title">
+						<a href="#">Unde Cafe</a>
+					  </h3>
+					  <span class="location-item__address">5 Ng. 157 P.Chùa Láng , Láng Thượng<br>Đống Đa , Hà Nội<br></span>
+					  <span class="location-item__hours">Các ngày trong tuần 8h - 23h<br>Cuối tuần 8h - 23h</span>
+					  <div class="location-item__actions">
+						<a href="#" class="location-item__link" target="_blank">
+							Đặt hàng trước
+						</a>
+						<a href="/pages/locations-portland-ace-hotel" class="location-item__link">
+							Thêm thông tin
+						</a>
+					  </div>
+				</div>
+			</div>
+		  </div>
+	</div>
+	</div>
+
+
+    <!-- Code here -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <div class="footer-part-title">
+                    <h4>Shop</h4>
+                </div>
+                <h1>TVHKT</h1><br>
+                <h3>Coffee your way</h3>
+            </div>
+            <div class="footer-link-group">
+                <div class="footer-link">
+                    <div class="footer-part-title">
+                        <h4>About</h4>
+                    </div>
+                    <ul>
+                        <li><a href="">Our story</a></li>
+                        <li><a href="">Location</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <div class="footer-part-title">
+                        <h4>Learn</h4>
+                    </div>
+                    <ul>
+                        <li><a href="">Make a coffee</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <div class="footer-part-title">
+                        <h4>WholeSale</h4>
+                    </div>
+                    <ul>
+                        <li><a href="">Serve TVHKT</a></li>
+                        <li><a href="">Ordering</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-get-email">
+                <div class="footer-part-title">
+                    <h4>Get email from us</h4>
+                </div>
+                <div class="footer-email">
+                    <input type="text" placeholder="Enter your email">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copy-right">
+                <p>© 2021 TVHKT Coffee. All rights reserved.</p>
+            </div>
+            <div class="social-link">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
