@@ -233,3 +233,43 @@
     font-weight: none;
 }
 
+@media (max-width: 768px){
+    #body-container .slide{
+        margin-top: 110px;
+        height: 500px;
+        background-position-x: center;
+    }
+    #body-container .slide .slide-text{
+        transform: translateY(20%);
+    }
+    #body-container .slide .slide-text h1{
+        font-size: 3.3rem!important;
+    }
+    #body-container .new-product-review{
+        display: flex;
+        flex-direction: column;
+        background-position-x: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* text-align: center; */
+    }
+    #body-container .new-product-review .product-review{
+        order: 2;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    #body-container .new-product-review .product-review .product-infos{
+        margin: auto;
+    }
+    .product-btn{
+        margin-top: 30px;
+    }
+    #body-container .new-product-review .product-img{
+        order: 1;
+        width: 70%;
+    }
+}
+

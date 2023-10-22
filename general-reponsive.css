@@ -1,5 +1,24 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .footer-bottom {
         display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    .header-buttons {
+        display: none;
+    }
+    .header{
+        justify-content: center!important;
+    }
+    .header .logo{
+        margin-left: 0!important;
+    }
+    #header-container .banner-wrapper .banner{
+        height: 30px!important;
+    }
+    #header-container .banner-wrapper .banner .banner-text p{
+        font-size: 0.7rem!important;
     }
 }
