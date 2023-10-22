@@ -18,39 +18,35 @@ function StringMatch(txt,reg){
     return reg.test(txt.value);
 }
 function validform(f){
-    if(checknull(f.ho_và_tên || f.email || f.Số_điện_thoại || f.nội_dung)){
-        alert("Vui lòng nhập đầy đủ thông tin")
-        return;
-    }
     if(checknull(f.họ_và_tên)){
-        alert("Vui lòng nhập họ và tên.")
+        alert("Họ và tên chưa được nhâp")
         f.họ_và_tên.focus();
         return;
     }
     if(checknull(f.email)){
-        alert(f.email.name+" chưa được nhâp")
+        alert("Email chưa được nhâp")
         f.email.focus();
         return;
     }
     if(!StringMatch(f.email,check_email)){
-        alert(" email nhập sai định dạng");
+        alert("Email nhập sai định dạng");
         f.email.value="";
         f.email.focus();
         return;
     }
     if(checknull(f.Số_điện_thoại)){
-        alert(f.Số_điện_thoại.name+" chưa được nhâp")
+        alert("Số điện thoại chưa được nhâp")
         f.Số_điện_thoại.focus();
         return;
     }
     if(!StringMatch(f.Số_điện_thoại,check_phone)){
-        alert(" Số điện thoại nhập sai định dạng");
+        alert("Số điện thoại nhập sai định dạng");
         f.Số_điện_thoại.value="";
         f.Số_điện_thoại.focus();
         return;
     }
     if(checknull(f.nội_dung)){
-        alert(f.nội_dung.name+" chưa được nhâp")
+        alert("Nội dung chưa được nhâp")
         f.nội_dung.focus();
         return;
     }

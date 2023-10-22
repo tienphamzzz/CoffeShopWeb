@@ -16,7 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../search_btn.js"></script>
     <script src="contact.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Inter&family=Martian+Mono&family=Open+Sans&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Inter&family=Martian+Mono&family=Open+Sans&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
     <style></style>
 </head>
 
@@ -82,92 +84,93 @@
             </div>
         </div>
     </div>
-    
+
     <br>
     <div class="main">
-        <div class="infor">
-            <div class="yeucau">
-                <div class="ykien" style="font-family: 'Cabin', sans-serif;">
-                    <img src="img/anhbtl.jpg" alt="anhbtl">
-                    <span>Chúng tôi muốn lắng nghe ý kiến của quý khách
-                        .Vui lòng gửi yêu cầu, thắc mắc theo thông tin
-                        bên dưới, chúng tôi sẽ liên lạc với bạn sớm nhất
-                        có thể để giải đáp mọi thắc mắc và yêu cầu.
-                    </span><br>
-                </div>
-                <table>
-                    <form action="" name="frmAccount">
-                        <tr>
-                            <td><label for="hoten"><b>Họ và tên:</b></label></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="nhap">
-                                    <div class="ndnhap">
-                                        <input type="text" placeholder="Nhập họ và tên" id="hoten" name="họ_và_tên">
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="email"><b>Email</b></label><br></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="nhap">
-                                    <div class="ndnhap">
-                                        <input type="text" placeholder="Nhập email vd:abc@gmail.com" id="email"
-                                            name="email">
+        <div class="col-4 col-s-12 thongtin">
+            <b>
+                Thông tin liên hệ:
+            </b>
+            <p>Địa chỉ: số 3 phố Cầu Giấy,
+                Đống Đa, Hà Nội</p>
+            <p>Điện thoại: 0123456789</p>
+            <p>Email:vuatrochoi@gmail.com.vn</p>
+        </div>
+        <div class="col-6 col-s-12 yeucau">
+            <div class="ykien">
+                <img src="img/anhbtl.jpg" alt="anhbtl">
+                <span>Chúng tôi muốn lắng nghe ý kiến của quý khách
+                    .Vui lòng gửi yêu cầu, thắc mắc theo thông tin
+                    bên dưới, chúng tôi sẽ liên lạc với bạn sớm nhất
+                    có thể để giải đáp mọi thắc mắc và yêu cầu.
+                </span><br>
+            </div>
+            <table>
+                <form action="abc.jsp " name="frmAccount">
+                    <tr>
+                        <td><label for="hoten"><b>Họ và tên</b></label></td>
 
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> <label for="dienthoai"><b>Số điện thoại: </b></label><br></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="nhap">
-                                    <div class="ndnhap">
-                                        <input type="text" placeholder="Nhập số điện thoại vd:0123456789" id="dienthoai"
-                                            name="Số_điện_thoại">
-
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="noidung"><b>Nhập nội dung yêu cầu: </b></label><br></td>
-                        </tr>
+                    </tr>
+                    <tr>
                         <td>
-                            <textarea name="nội_dung" id="" cols="61" rows="5" id="noidung"
-                                placeholder="Nhập nội dung"></textarea>
-                        </td>
-                        <tr>
-                            <td>
-                                <div class="guiyeucau">
-                                    <input type="button" value="Gửi yêu cầu "
-                                        onclick="validform(document.forms.frmAccount);">
-                                    <input type="reset" value="Nhập lại" id="nhaplai">
+                            <div class="nhap">
+                                <div class="ndnhap">
+                                    <input type="text" placeholder="Nhập họ và tên" id="hoten" name="họ_và_tên">
+
                                 </div>
-                            </td>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><b>Email</b></label><br></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="nhap">
+                                <div class="ndnhap">
+                                    <input type="text" placeholder="Nhập email vd:abc@gmail.com" id="email"
+                                        name="email">
 
-                        </tr>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="dienthoai"><b>Điện thoại</b></label><br></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="nhap">
+                                <div class="ndnhap">
+                                    <input type="text" placeholder="Nhập số điện thoại vd:0123456789" id="dienthoai"
+                                        name="Số_điện_thoại">
 
-                    </form>
-                </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="noidung"><b>Nhập nội dung yêu cầu</b></label><br></td>
+                    </tr>
+                    <td>
+                        <textarea name="nội_dung" id="" cols="65" rows="5" id="noidung" placeholder="Nhập nội dung"
+                            style="font-size: 17px;"></textarea>
+                    </td>
+                    <tr>
+                        <td>
+                            <div class="guiyeucau">
+                                <input type="button" value="Gửi yêu cầu "
+                                    onclick="validform(document.forms.frmAccount);">
+                                <input type="reset" value="Nhập lại" id="nhaplai">
+                            </div>
+                        </td>
 
-            </div>
-            <div class="thongtin">
-                <b>
-                    Thông tin liên hệ:
-                </b>
-                <p>Địa chỉ: số 3 phố Cầu Giấy,
-                    Láng Thượng, Đống Đa, Hà Nội</p>
-                <p>Điện thoại: 0123456789</p>
-                <p>Email:vuatrochoi@gmail.com.vn</p>
-            </div>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </form>
+            </table>
 
         </div>
     </div>
