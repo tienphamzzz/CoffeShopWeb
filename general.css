@@ -274,11 +274,12 @@ footer .footer-get-email .footer-email i{
 .footer-bottom{
     width: 100%;
     display: flex;
+    justify-content: space-between;
     padding-top: 30px;
 }
 
 .footer-bottom .copy-right{
-    width: 75%;
+    width: 40%;
     padding-left: 4.16%;
 }
 
