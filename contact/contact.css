@@ -102,8 +102,8 @@ img {
     color:#E3DED7 ;
 }
 .guiyeucau input{
-    background-color: #E3DED7;
-    border-radius: 8px;
+    background-color: white;
+    /* border-radius: 8px; */
     padding: 10px;
     font-size: 17px;
 }
