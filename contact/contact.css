@@ -1,3 +1,4 @@
+/* For smart phones:*/
 [class*="col-"]{
     width: 100%;
 }
@@ -41,8 +42,8 @@
 .main{
     width: 80%;
     font-size: 17px;
-    height: 720px;
-   margin: 130px auto;
+    height: 550px;
+   margin: 150px auto;
 }
 *[class*="col-"]{
    float: left;
@@ -50,15 +51,16 @@
 }
 .yeucau {
    float: right;
-    height: 600px;
+    
 }
 .thongtin {
     
-    text-align: justify;
-    height: 120px;
+    text-align: left;
+    height: 145px;
   
 }
 table{
+    width: 100%;
     padding: 0px;
     line-height: 15px;
     border-spacing : 0px 8px;
@@ -68,24 +70,24 @@ img {
     height: auto;
 }
 .ykien{
-    width: 100%;
+ 
     text-align: justify;
 }
 .nhap{
-    width: 100%;
+   
     background-color: #F6F5F3;
     font-size: 17px;
 }
 
  .ndnhap{
-    width: 100%;
+   
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #2B2A2B;
     padding-bottom: 5px;   
 }
  .ndnhap input{
-    width: 100%;
+  
     border: none;
     outline: none;
     font-size: 17px;
@@ -102,8 +104,8 @@ img {
     color:#E3DED7 ;
 }
 .guiyeucau input{
-    background-color: white;
-    /* border-radius: 8px; */
+    background-color: #F6F5F3;
     padding: 10px;
     font-size: 17px;
 }
+
