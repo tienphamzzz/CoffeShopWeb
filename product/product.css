@@ -38,7 +38,7 @@
 button {
     margin-right: 35px;
     background-color: #F6F5F3;
-    padding: 5px;
+    padding: 3px 10px;
     border:2px solid #2B2A2B;
     cursor: pointer;
 }
