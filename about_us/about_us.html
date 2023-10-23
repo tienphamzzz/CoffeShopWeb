@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="about_us.css">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Sofia?preview.text=C%C3%A0%20Ph%C3%AA&preview.size=54&query=sofia">
+  <link rel="stylesheet"
+    href="https://fonts.google.com/specimen/Sofia?preview.text=C%C3%A0%20Ph%C3%AA&preview.size=54&query=sofia">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -13,11 +14,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../nav_foot.css">
   <link rel="stylesheet" href="../nav_foot_reponsive.css">
   <link rel="stylesheet" href="../search_btn.js">
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Inter&family=Martian+Mono&family=Open+Sans&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <script src="../menu_btn.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Inter&family=Martian+Mono&family=Open+Sans&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins&family=Roboto&display=swap"
+    rel="stylesheet">
 
   <style></style>
 </head>
@@ -43,6 +49,17 @@
     <script src="../banner.js"></script>
 
     <div class="header">
+      <div class="header-buttons btn-menu">
+        <button class="btn btn-open" onclick="openMenu()">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+    </div>
+
+    <div class="header-buttons btn-menu">
+        <button class="btn btn-close" style="display: none;" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+        </button>
+    </div>
       <div class="logo">
         <img src="img/logo1.png" alt="LOGO" />
       </div>
@@ -66,6 +83,24 @@
           <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
         </button>
       </div>
+    </div>
+  </div>
+
+  <div class="column-nav-menu">
+    <div class="nav-menu">
+      <ul>
+        <li><a href="../index.html">Homepage</a></li>
+        <li><a href="../product/product.html">Shop</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li><a href="../location/location.html">Location</a></li>
+        <li><a href="../contact/contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="What can we help you find" />
+      <button class="search-btn">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
     </div>
   </div>
 

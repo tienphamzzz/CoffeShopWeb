@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Inter&family=Martian+Mono&family=Open+Sans&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     <script src="../search_btn.js"></script> 
+    <script src="../menu_btn.js"></script>
 </head>
 
 <body>
@@ -39,6 +40,17 @@
         
         <script src="homepage.js"></script>
         <div class="header">
+            <div class="header-buttons btn-menu">
+                <button class="btn btn-open" onclick="openMenu()">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </button>
+            </div>
+
+            <div class="header-buttons btn-menu">
+                <button class="btn btn-close" style="display: none;" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                </button>
+            </div>
             <div class="logo">
                 <img src="img/logo1.png" alt="LOGO" />
             </div>
@@ -64,6 +76,25 @@
             </div>
         </div>
     </div>
+
+    <div class="column-nav-menu">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="../about_us/about_us.html">About us</a></li>
+                <li><a href="../location/location.html">Location</a></li>
+                <li><a href="../contact/contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="What can we help you find" />
+            <button class="search-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
     <div class="search-page" style="display: none;">
         <div class="search-container">
             <div class="search-top">

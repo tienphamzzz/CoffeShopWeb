@@ -3,7 +3,7 @@
         display: block;
     }
 
-    .nav-menu {
+    .header .nav-menu {
         display: none;
     }
     .header-buttons {
@@ -56,10 +56,16 @@
     body{
         padding-bottom: 700px;
     }
+
+    .btn-menu{
+        left: 0;
+        top: 45%;
+        display: block;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
-    .nav-menu {
+    .header .nav-menu {
         display: none;
     }
     #header-container .header{
@@ -86,5 +92,10 @@
     }
     .featured-products-container .featured-products .product-wrapper .product .product-img img {
         height: 270px;
+    }
+    .btn-menu{
+        display: block;
+        left : 0;
+        top: 35%;
     }
 }
