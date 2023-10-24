@@ -182,10 +182,13 @@ img {
 }
 
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
   #dau {
     height: 40px;
+  }
 
+  .anhnen p{
+    font-size: 30px;
   }
 
   .lienket {
@@ -193,7 +196,7 @@ img {
   }
 
   .anhnen {
-    font-size: 30px;
+    height: auto;
   }
 
   .lienket ul {
@@ -201,9 +204,6 @@ img {
     padding: 0;
   }
 
-  /* .lienket i{
-    font-size: 20px;
-  } */
   .lienket li {
     display: inline-block;
     margin: 0 10px;
