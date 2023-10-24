@@ -183,6 +183,11 @@ img {
 
 
 @media only screen and (max-width:768px) {
+
+  .all{
+    margin-top: 110px;
+  }
+  
   #dau {
     height: 40px;
   }
