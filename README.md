@@ -81,6 +81,6 @@ Thư mục gốc của bài tập lớn bao gồm:
 9. **Xây dựng tính năng thêm:** Thêm tính năng mới và cải tiến trang web dựa trên phản hồi của người dùng và yêu cầu kinh doanh.
 
 
-<div style="text-align: center;">
+<div style="text-align: center; width: 100%;">
     <img src="https://i.imgur.com/a0SL9VR.gif">
 </div>
