@@ -51,7 +51,7 @@ button.active{
     color: white;
 }
 
-@media (max-width:769px){
+@media (max-width:768px){
     #kien{
         width: 70%;
     }
@@ -73,7 +73,7 @@ button.active{
         transition: 0.3s;
     }
     .menu-class-cafe button{
-        margin-right: 15px;
+        margin-right: 0px;
         font-size: 1rem;
     }
 }
