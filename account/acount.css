@@ -62,6 +62,10 @@
     margin-right: 10px;
 }
 
+.btn-login a{
+    color: #2b2a2b;
+}
+
 @media screen and (max-width: 768px){
     .account{
         flex-direction: column;
