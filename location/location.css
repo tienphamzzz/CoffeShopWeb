@@ -4,7 +4,6 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: #f6f5f3;
     color: #1f1815;
-    font-family: GT Flexa, sans-serif;
     font-weight: 400;
 }
 
@@ -247,7 +246,7 @@ h3 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 1.7rem;
     line-height: 120%;
     letter-spacing: -.56px;
 }
