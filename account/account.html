@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TVHKT Coffe</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo1.png">
+    <link rel="stylesheet" href="acount.css">
+    <link rel="stylesheet" href="../nav_foot.css">
+    <link rel="stylesheet" href="../nav_foot_reponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Martian+Mono&family=Open+Sans&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="../search_btn.js"></script>
+    <script src="account.js"></script>
+    <script src="../menu_btn.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Inter&family=Martian+Mono&family=Open+Sans&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <style></style>
+</head>
+
+<body>
+    <div id="header-container">
+        <div class="banner-wrapper">
+            <div class="banner">
+                <div class="banner-text" id="banner-1">
+                    <p>Proud of best coffee in town</p>
+                </div>
+                <div class="banner-text" id="banner-2">
+                    <p>Free ship for all orders over $10</p>
+                </div>
+                <div class="banner-text" id="banner-3">
+                    <p>
+                        GET 30% OFF YOUR FIRST SUBSCRIPTION SHIPMENT WITH CODE: TVHKTSHOP
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="../banner.js"></script>
+
+        <div class="header">
+            <div class="header-buttons btn-menu">
+                <button class="btn btn-open" onclick="openMenu()">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </button>
+            </div>
+
+            <div class="header-buttons btn-menu">
+                <button class="btn btn-close" style="display: none;" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                </button>
+            </div>
+            <div class="logo">
+                <img src="../img/logo1.png" alt="LOGO" />
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="../product/product.html">Shop</a></li>
+                    <li><a href="../about_us/about_us.html">About us</a></li>
+                    <li><a href="../location/location.html">Location</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-buttons">
+                <button class="btn btn-search" onclick="search()">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+                </button>
+                <a class="btn btn-primary">
+                    <i class="fa-regular fa-user" style="color: #ffffff"></i>
+                </a>
+                <button class="btn btn-secondary">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="column-nav-menu">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="../product/product.html">Shop</a></li>
+                <li><a href="../about_us/about_us.html">About us</a></li>
+                <li><a href="../location/location.html">Location</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="What can we help you find" />
+            <button class="search-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="search-page" style="display: none;">
+        <div class="search-container">
+            <div class="search-top">
+                <div class="search-title">
+                    <h1>What can we help you find ?</h1>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="What can we help you find" />
+                    <button class="search-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="main">
+        <div class="account">
+            <div class="acc-login-left">
+                <h1>Xin chào, <br>bạn!. </h1>
+            </div>
+            <div class="acc-login-right">
+                <div class="acc-p">
+                    <p>Bạn gặp sự cố khi đăng nhập? Cảnh báo “Email hoặc mật khẩu không chính xác” có thể cho biết rằng bạn chưa thiết lập tài khoản cho phép bạn truy cập đầy đủ để duy trì hồ sơ của mình hoặc điều chỉnh các đăng ký liên quan - vui lòng Đăng ký tại đây bằng chính địa chỉ email mà bạn đã đăng ký để kích hoạt tài khoản của mình.</p>
+                </div>
+                <div class="input-email">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-password">
+                    <input type="text" placeholder="Password">
+                </div>
+                <div class="btn-login">
+                    <button class="btn-login">Đăng nhập</button>
+                    <a href="">Quên mật khẩu?</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <div class="footer-part-title">
+                    <h4>Shop</h4>
+                </div>
+                <h1>TVHKT</h1><br>
+                <h3>Coffee your way</h3>
+            </div>
+            <div class="footer-link-group">
+                <div class="footer-link">
+                    <div class="footer-part-title">
+                        <h4>About</h4>
+                    </div>
+                    <ul>
+                        <li><a href="">Our story</a></li>
+                        <li><a href="">Location</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <div class="footer-part-title">
+                        <h4>Learn</h4>
+                    </div>
+                    <ul>
+                        <li><a href="">Make a coffee</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <div class="footer-part-title">
+                        <h4>WholeSale</h4>
+                    </div>
+                    <ul>
+                        <li><a href="">Serve TVHKT</a></li>
+                        <li><a href="">Ordering</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-get-email">
+                <div class="footer-part-title">
+                    <h4>Get email from us</h4>
+                </div>
+                <div class="footer-email">
+                    <input type="text" placeholder="Enter your email">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copy-right">
+                <p>© 2021 TVHKT Coffee. All rights reserved.</p>
+            </div>
+            <div class="social-link">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

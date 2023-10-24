@@ -1,10 +1,33 @@
-/* *{
-    margin: 0;
-    padding: 0;
+#dau {
+  background-color: #eceae6;
+  height: 60px;
+  width: 100%;
+}
 
-} */
+#thanhcuon {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #eceae6;
+  z-index: 9999;
+}
+
+#nd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  width: 10%;
+}
+
 .all {
   width: 100%;
+  margin-top: 130px;
   /* display: flex; */
   justify-content: center;
   background-color: #eceae6;
@@ -13,17 +36,15 @@
 }
 
 .anhnen {
-
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  background-image: url(nen6.png);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/OurStory.png);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 80%;
   padding-top: 80%;
-  /* height: 80%; */
-  /* z-index: 0; */
+  height: 500px;
   padding: 20px;
   margin: auto;
 }
@@ -31,6 +52,21 @@
 .anhnen p {
   text-align: center;
   padding: 20px;
+  /* line-height: 0.4; */
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+.tieude p {
+  text-indent: 25px;
+  text-align: justify;
+}
+
+.tieude1 p {
+  text-indent: 25px;
+  text-align: justify;
 }
 
 hr {
@@ -39,21 +75,31 @@ hr {
 }
 
 .lienket {
-  /* width: 40%; */
+  padding: 0;
+  border: 2px solid #2b2a2b;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  padding-top: 10px;
   margin: auto;
-  /* transform: translate(-50%,-50%); */
-  /* display: flex;
-    justify-content: center; */
-  text-align: center;
+  transition: font-size 0.2s;
+  position: sticky;
+  top: 130px;
+  left: 0;
+  right: 0;
+  background-color: #eceae6;
+  z-index: 9999;
 }
 
 .lienket ul {
   list-style: none;
+  text-align: center;
 }
 
 .lienket li {
   display: inline-block;
   margin: 0 30px;
+
 }
 
 .lienket p {
@@ -63,13 +109,18 @@ hr {
 
 .lienket a {
   text-decoration: none;
-  color: #000;
+  color: #6d6868;
 }
 
-h1 {
+.lienket i {
+  font-size: 30px;
+}
+
+.main h1 {
   text-align: center;
   font-family: 'Great Vibes', cursive;
-  font-size: 60px;
+  font-size: 40px;
+  margin: 20px 0px;
 }
 
 .tieude {
@@ -91,51 +142,100 @@ h1 {
   padding-right: 30px;
 }
 
+#anhh {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
 .list-img {
   width: 60%;
   margin: auto;
   overflow: hidden;
-  width: 800px;
-
 }
 
 .img {
   display: flex;
   transition: transform 0.5s ease;
+  max-width: 100%;
+
 }
 
 .dsanh {
-  width: 100%;
-
-  /* overflow: hidden;  */
-}
-
-.anh {
-  /* display: flex; */
-  /* transition: transform 0.5s ease; */
-  background-image: 200px 400px;
-  padding-right: 20px;
   width: 60%;
   margin: auto;
 
 }
 
-/* .muiten{
-  position: absolute;
-  
-  transform: translateY(-50%);
- }
- .left{
-  left: 0;
- }
- .right{
-  right: 0;
- } */
+.anh {
+  display: grid;
+  height: auto;
+  width: 100%;
+}
 
-@media only screen and (max-width:46.1875em) {
+img {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media only screen and (max-width:767px) {
+  #dau {
+    height: 40px;
+
+  }
+
+  .lienket {
+    top: 110px;
+  }
+
+  .anhnen {
+    font-size: 30px;
+  }
+
+  .lienket ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* .lienket i{
+    font-size: 20px;
+  } */
+  .lienket li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+    font-size: 10px;
+  }
+
+  .lienket i {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .tieude {
+    width: 90%;
+  }
+
+  .so1 {
+    padding: 0;
+  }
+
+  #anhh {
+    max-width: 100%;
+    height: auto;
+    /* margin: auto; */
+  }
 
   .tieude1 {
     flex-direction: column-reverse;
+    width: 90%;
   }
 
   .list-img {
@@ -160,9 +260,46 @@ h1 {
   }
 }
 
-@media only screen and (min-width:46.25em)and(max-width:63.9375em) {
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+  .anhnen {
+    font-size: 40px;
+  }
+
+  .lienket ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* .lienket i{
+        font-size: 20px;
+      } */
+  .lienket li {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .lienket i {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .tieude {
+    width: 90%;
+  }
+
+  .so1 {
+    padding: 0;
+  }
+
   .tieude1 {
     flex-direction: column-reverse;
+    width: 90%;
   }
 
   .list-img {
@@ -183,5 +320,6 @@ h1 {
 
   .anh {
     width: 100% !important;
+    height: auto;
   }
 }

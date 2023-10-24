@@ -1,0 +1,77 @@
+.main{
+    width: 80%;
+    font-size: 17px;
+    min-height: 100vh;
+    margin: auto;
+    margin-top: 150px;
+    /* margin-bottom: 700px; */
+}
+
+.account{
+    display: flex;
+    justify-content: space-between;
+}
+
+.account .acc-login-left{
+    width: 30%;
+}
+
+.account .acc-login-left h1{
+    font-size: 4rem;
+}
+
+.account .acc-login-right{
+    width: 50%;
+}
+
+.account .acc-login-right .acc-p p{
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.account .acc-login-right .input-email{
+    margin-bottom: 20px;
+}
+
+.account .acc-login-right .input-email input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #2b2a2b;
+    background-color: #F6F5F3;
+}
+
+.account .acc-login-right .input-password{
+    margin-bottom: 20px;
+}
+
+.account .acc-login-right .input-password input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #2b2a2b;
+    background-color: #F6F5F3;
+}
+
+.btn-login button{
+    border: none;
+    background-color: #2b2a2b;
+    color: #F6F5F3;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .account{
+        flex-direction: column;
+    }
+
+    .account .acc-login-left{
+        width: 100%;
+    }
+
+    .account .acc-login-right{
+        width: 100%;
+    }
+}
