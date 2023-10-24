@@ -4,7 +4,7 @@
 - Phạm Ngọc Tiền - 221231008
 - Đinh Công Vinh - 221231049
 - Trịnh Ngọc Kiên - 221230889
-- Trịnh Hữu Thiện - 221231008
+- Trịnh Hữu Thiện - 221231001
 - Tạ Gia Huy - 221230860
 
 #### Nội dung bài tập lớn:
