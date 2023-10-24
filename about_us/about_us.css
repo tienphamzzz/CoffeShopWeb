@@ -88,7 +88,7 @@ hr {
   left: 0;
   right: 0;
   background-color: #eceae6;
-  z-index: 9999;
+  z-index: 20;
 }
 
 .lienket ul {
