@@ -82,5 +82,5 @@ Thư mục gốc của bài tập lớn bao gồm:
 
 
 <p align ="center">
-    <img src="https://i.imgur.com/a0SL9VR.gif">
+    <img src="https://i.imgur.com/0Ca6qeF.gif">
 </p>
