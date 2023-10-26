@@ -67,7 +67,7 @@ Thư mục gốc của bài tập lớn bao gồm:
 - [ ] Trang chủ:
     - [ ] Có chức năng tìm kiếm.
     - [ ] Có chắc năng đăng nhập, đăng kí, đăng xuất.
-    - [ ] Có chức giỏ hàng.
+    - [ ] Có chức năng giỏ hàng.
 
 #### Hướng phát triển trong tương lai:
 1. **Hoàn thiện các chức năng chưa hoàn thành.**
