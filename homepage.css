@@ -80,6 +80,14 @@
     margin-bottom: 30px;
 }
 
+#body-container .new-product-review .product-review .product-name h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
 #body-container .new-product-review .product-review .product-infos{
     width: 80%;
     font-size: 1.2rem;
@@ -272,6 +280,9 @@
         margin-top: 50px;
         margin-left: 0px;
         margin-bottom: 50px;
+    }
+    #body-container .new-product-review .product-review .product-name h1{
+        font-size: 3rem;
     }
     #body-container .new-product-review .product-review .product-infos{
         margin: auto;

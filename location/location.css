@@ -41,7 +41,6 @@ a {
 }
 
 h2 {
-    font-family: sans-serif;
     color: black;
 }
 
@@ -404,7 +403,7 @@ nav ul li ul li a {
         margin-top: 5.125rem;
     }
 
-    h1 {
+    .content h1 {
         font-size: 5rem;
         letter-spacing: -.8px;
     }
@@ -422,7 +421,7 @@ nav ul li ul li a {
     }
 
     .content-heading {
-        line-height: 4.65rem;
+        line-height: 6.65rem;
     }
 
     .content-heading {
